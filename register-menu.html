@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>ثبت منوی دیجیتال رستوران</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="auth-body">
+  <div class="register-container">
+    <h1>ساخت منوی دیجیتال رستوران</h1>
+    <form id="menuForm" autocomplete="off">
+      <input type="text" name="restaurant" id="restaurant" placeholder="نام رستوران" required>
+      <input type="text" name="manager" id="manager" placeholder="نام مدیر" required>
+      <input type="tel" name="phone" id="phone" placeholder="تلفن تماس" required>
+      <input type="text" name="address" id="address" placeholder="آدرس" required>
+      <textarea name="desc" id="desc" placeholder="توضیحات کوتاه" rows="2"></textarea>
+      <label class="avatar-label">
+        لوگوی رستوران:
+        <input type="file" id="logo" accept="image/*">
+      </label>
+      <div id="logoPreview"></div>
+      <hr>
+      <h2>افزودن آیتم‌های منو</h2>
+      <div id="menuItems"></div>
+      <button type="button" class="btn-main" id="addItemBtn">افزودن آیتم جدید</button>
+      <button type="submit" class="btn-main">ثبت منو</button>
+    </form>
+    <div id="menuMsg" class="msg"></div>
+  </div>
+  <script src="assets/js/register-menu.js"></script>
+</body>
+</html>
